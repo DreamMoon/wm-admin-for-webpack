@@ -1,0 +1,28 @@
+.u-scroll-to-top {
+    position: fixed;
+    display: block;
+    right: -100px;
+    bottom: 10px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    background-color: #1c2b36;
+    color: #fff;
+    text-align: center;
+    z-index: 10;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0 0 1px rgba(0,0,0,.05);
+    -moz-box-shadow: 0 0 1px rgba(0,0,0,.05);
+    -webkit-box-shadow: 0 0 1px rgba(0,0,0,.05);
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    cursor: pointer;
+}
+.u-scroll-to-top.z-active {
+    right: 10px;
+}

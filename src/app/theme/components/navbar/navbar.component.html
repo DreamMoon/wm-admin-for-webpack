@@ -1,0 +1,56 @@
+<header class="g-navbar">
+    <div class="m-navbar" [class.z-collapsed]="!showSidebar">
+        <div class="m-navbar_header">
+            <h1 class="u-navbar_title">
+                <a href="javascript:void(0)" class="rubberBand animated">WM Admin</a>
+            </h1>
+        </div>
+        <div class="m-navbar_container">
+            <div class="m-navbar_cleft">
+                <span class="u-navbar_btn" (click)="toggelSidebar()"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                <span class="u-navbar_btn" (click)="toggleSidebarHeader()"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+            </div>
+            <div class="m-navbar_cright">
+                <ul class="m-dropdown_menu">
+                    <li class="u-dropdown" [class.z-actived]="curDropdownMenuIndex == 1" (click)="showDropdownMenu(1)">
+                        <span class="u-dropdown_item">
+                            <i class="fa fa-bell-o"></i>
+                            <span class="u-dropdown_badge">5</span>
+                        </span>
+                        <div class="u-dropdown_menu" [ngClass]="{'animated bounceInRight': curDropdownMenuIndex == 1}">
+                            <div class="u-dropdown_menu_header">You have 10 notifications</div>
+                            <ul class="u-dropdown_list">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                            <div class="u-dropdown_menu_footer">
+                                <a href="#">See all the notifications. </a>
+                                <a href="#"><i class="fa fa-gear"></i></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="u-dropdown" [class.z-actived]="curDropdownMenuIndex == 2" (click)="showDropdownMenu(2)">
+                        <span class="u-dropdown_item">
+                            <span class="u-img_circle zoomIn animated">
+                                <img src="/assets/images/avatar-02.jpg" alt="头像">
+                            </span>
+                        </span>
+                        <div class="u-dropdown_menu" [ngClass]="{'animated flipInX': curDropdownMenuIndex == 2}">
+                            <ul class="u-dropdown_list">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                            <div class="u-dropdown_menu_footer">
+                                <a href="#">See all the notifications. </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>

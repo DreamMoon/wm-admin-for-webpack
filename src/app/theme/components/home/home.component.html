@@ -1,0 +1,14 @@
+<p>This is the Home Component.</p>
+<p>
+    <button pButton type="text" (click)="count()" label="Click"></button>
+
+    <button pButton type="text" (click)="count()" icon="fa-check" label="Click"></button>
+
+    <button pButton type="text" (click)="count()" icon="fa-check" iconPos="right" label="Click"></button>
+
+    <button pButton type="text" (click)="count()" icon="fa-check"></button>
+
+    <button pButton type="text" (click)="count()" icon="fa-check" [disabled]="true" label="Disabled"></button>
+
+    Number of clicks: {{clicks}}
+</p>

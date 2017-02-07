@@ -1,0 +1,29 @@
+.m-footer {
+    border-top: 1px solid #dee5e7;
+    padding: 10px;
+    background-color: #edf1f2;
+
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: 1001;
+}
+.m-footer p {
+    margin: 3px 0;
+    font-size: 13px;
+}
+.m-footer .u-footer-left {
+    float: left;
+}
+.m-footer .u-footer-right {
+    float: right;
+}
+.m-footer a {
+    color: #363f44;
+    text-decoration: none;
+    cursor: pointer;
+}
+.m-footer .z-bold {
+    font-weight: bold;
+}

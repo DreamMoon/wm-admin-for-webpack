@@ -1,0 +1,26 @@
+/**
+* 为支持字体库：font-awesome
+* 参考：http://stackoverflow.com/questions/33649761/how-do-i-load-font-awesome-using-scss-sass-in-webpack-using-relative-paths
+* 1. 增加font-awesome-sass-loader插件；
+* 2. 修改webpack.common.js配置解析字体文件；
+* 3. 引入vendor.browser.ts
+*/
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome";
+@import "~animate.css/animate";
+
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif, "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti, "Microsoft YaHei";
+  background-color: #f5f5f5;
+
+  width: 100%;
+  height: 100%;
+}
+h1 {
+  margin: 0;
+}

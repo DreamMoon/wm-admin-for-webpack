@@ -42,7 +42,7 @@ export class SidebarComponent implements OnInit {
                 color: '#05afd1',
                 icon: 'home',
                 name: '首页',
-                link: '#',
+                link: '',
                 badge: 0,
                 submenus: []
             },
@@ -54,7 +54,7 @@ export class SidebarComponent implements OnInit {
                 badge: 0,
                 submenus: [
                     {
-                        link: '#',
+                        link: '/container',
                         name: '小部件'
                     },
                     {

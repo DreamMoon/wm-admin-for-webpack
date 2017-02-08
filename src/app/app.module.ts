@@ -18,7 +18,7 @@ import {
  * Platform and Environment providers/directives/pipes
  */
 import { ENV_PROVIDERS } from './environment';
-import { routing } from './app.routing';
+import { AppRoutingModule } from "./app-routing.module";
 // App is our top level component
 import { AppComponent } from './app.component';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
@@ -56,9 +56,10 @@ type StoreType = {
     RouterModule,
     FormsModule,
     ReactiveFormsModule,
-    WmModule.forRoot(),
+    
     PagesModule,
-    routing
+    WmModule.forRoot(),
+    AppRoutingModule
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     ENV_PROVIDERS,

@@ -32,3 +32,33 @@
         left: 240px;
     }
 }
+
+/* container 内容模块 */
+.m-container {
+  padding: 15px 15px 60px 15px;
+  min-height: 683px;
+}
+.m-box {
+  background-color: white;
+  /* border: 1px solid #ddd; */
+  margin-bottom: 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  /* min-height: 200px; */
+  overflow: auto;
+}
+.m-box>.m-box_inner {
+  padding: 20px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+@media (max-width: 750px) {
+  .m-container {
+    padding: 10px;
+  }
+  .m-box>.m-box_inner {
+    padding: 15px;
+  }
+}

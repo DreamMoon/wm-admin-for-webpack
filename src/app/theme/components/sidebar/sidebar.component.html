@@ -25,18 +25,29 @@
         <div class="m-sidebar_container">
             <ul class="m-sidebar_menu">
                 <li *ngFor="let menu of menus" [class.z-menu_open]="curMenu == menu">
-                    <a [href]="menu.link" (click)="openMenu(menu)">
-                        <span class="u-sidebar_menu_border" [style.background-color]="menu.color"></span>
-                        <span class="u-sidebar_menu_icon"><i class="fa fa-{{menu.icon}}"></i></span>
-                        <span class="u-sidebar_menu_name">{{menu.name}}</span>
-                        <span *ngIf="menu.submenus.length > 0" class="u-sidebar_menu_arrow"></span>
-                        <span *ngIf="menu.badge && menu.badge > 0" class="u-sidebar_menu_badge bounceIn animated">{{menu.badge}}</span>
-                    </a>
-                    <ul *ngIf="menu.submenus.length > 0" class="u-sidebar_submenu">
-                        <li *ngFor="let submenu of menu.submenus" (click)="selectSubmenu(menu, submenu)" [class.z-submenu_actived]="curSubmenu == submenu">
-                            <a [href]="submenu.link">{{submenu.name}}</a>
-                        </li>
-                    </ul>
+                    <template [ngIf]="menu.submenus && menu.submenus.length > 0">
+                        <a href="javascript:void(0)" (click)="openMenu(menu)">
+                          <span class="u-sidebar_menu_border" [style.background-color]="menu.color"></span>
+                          <span class="u-sidebar_menu_icon"><i class="fa fa-{{menu.icon}}"></i></span>
+                          <span class="u-sidebar_menu_name">{{menu.name}}</span>
+                          <span *ngIf="menu.submenus.length > 0" class="u-sidebar_menu_arrow"></span>
+                          <span *ngIf="menu.badge && menu.badge > 0" class="u-sidebar_menu_badge bounceIn animated">{{menu.badge}}</span>
+                        </a>
+                        <ul class="u-sidebar_submenu">
+                          <li *ngFor="let submenu of menu.submenus" (click)="selectSubmenu(menu, submenu)" [class.z-submenu_actived]="curSubmenu == submenu">
+                            <a [routerLink]="submenu.link">{{submenu.name}}</a>
+                          </li>
+                        </ul>
+                    </template>
+                    <template [ngIf]="!menu.submenus || menu.submenus.length <= 0">
+                        <a [routerLink]="menu.link" (click)="openMenu(menu)">
+                          <span class="u-sidebar_menu_border" [style.background-color]="menu.color"></span>
+                          <span class="u-sidebar_menu_icon"><i class="fa fa-{{menu.icon}}"></i></span>
+                          <span class="u-sidebar_menu_name">{{menu.name}}</span>
+                          <span *ngIf="menu.submenus.length > 0" class="u-sidebar_menu_arrow"></span>
+                          <span *ngIf="menu.badge && menu.badge > 0" class="u-sidebar_menu_badge bounceIn animated">{{menu.badge}}</span>
+                        </a>
+                    </template>
                 </li>
             </ul>
         </div>

@@ -18,7 +18,7 @@ import 'style-loader!./app.component.scss';
   selector: 'wm-app',
   template: `
     <main>
-      <router-outlet></router-outlet>
+      <wm-page></wm-page>
     </main>
   `
 })

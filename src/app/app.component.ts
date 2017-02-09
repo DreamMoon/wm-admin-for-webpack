@@ -7,7 +7,6 @@ import {
 } from '@angular/core';
 import { AppState } from './app.service';
 
-/*import 'style-loader!./theme/initial.scss';*/
 import 'style-loader!./app.component.scss';
 
 /*
@@ -18,7 +17,7 @@ import 'style-loader!./app.component.scss';
   selector: 'wm-app',
   template: `
     <main>
-      <wm-page></wm-page>
+      <router-outlet></router-outlet>
     </main>
   `
 })

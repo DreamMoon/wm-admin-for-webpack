@@ -235,7 +235,7 @@
     border-right: 4px solid transparent;
 }
 /*二级菜单被点中*/
-.m-sidebar .m-sidebar_menu .u-sidebar_submenu>li.z-submenu_actived>a {
+.m-sidebar .m-sidebar_menu .u-sidebar_submenu>li>a.z-submenu_actived {
     color: white;
 }
 /*响应式*/

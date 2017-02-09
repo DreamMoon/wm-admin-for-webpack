@@ -3,7 +3,7 @@
  */
 import { Component } from '@angular/core';
 
-import 'style-loader!./wrapper.component.css';
+import 'style-loader!./wrapper.component.css'; // 设置全局可使用的css样式
 
 @Component({
     selector: 'wm-wrapper',

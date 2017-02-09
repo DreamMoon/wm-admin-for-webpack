@@ -22,11 +22,10 @@ class SidebarMenu {
     submenus: Array<SidebarSubmenu> = [];
 }
 
-import 'style-loader!./sidebar.component.scss';
-
 @Component({
     selector: 'wm-sidebar',
-    templateUrl: './sidebar.component.html'
+    templateUrl: './sidebar.component.html',
+    styleUrls: [ './sidebar.component.css' ]
 })
 export class SidebarComponent implements OnInit {
     @Input() show: boolean = false; // 是否显示sidebar
@@ -109,7 +108,7 @@ export class SidebarComponent implements OnInit {
                         name: '空白页面'
                     },
                     {
-                        link: '#',
+                        link: '/login',
                         name: '登录页面'
                     },
                     {

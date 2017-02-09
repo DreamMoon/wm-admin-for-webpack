@@ -213,3 +213,20 @@
         opacity: 0;
     }
 }
+
+@media (max-width: 600px) {
+    .m-navbar .m-dropdown_menu .u-dropdown_menu {
+        border-radius: 0;
+    }
+    .m-navbar .m-dropdown_menu>li.z-actived {
+        position: static;
+    }
+    .m-navbar .m-dropdown_menu>li.z-actived .u-dropdown_menu {
+        left: 240px;
+        right: 0;
+        width: auto;
+    }
+    .m-navbar.z-collapsed .m-dropdown_menu>li.z-actived .u-dropdown_menu {
+        left: 60px;
+    }
+}

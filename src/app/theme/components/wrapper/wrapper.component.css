@@ -1,9 +1,13 @@
-.g-wrapper {
+/*.g-wrapper {
     position: relative;
     width: 100%;
     height: auto;
     min-height: 100%;
     overflow-x: hidden;
+}*/
+wm-wrapper {
+  overflow: hidden;
+  display: block;
 }
 .g-container {
     position: relative;

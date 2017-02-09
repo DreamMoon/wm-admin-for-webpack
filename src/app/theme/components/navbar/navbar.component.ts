@@ -2,12 +2,12 @@
  * Created by DreamBoy on 2017/1/28.
  */
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-
-import 'style-loader!./navbar.component.css';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'wm-navbar',
-    templateUrl: './navbar.component.html'
+    templateUrl: './navbar.component.html',
+    styleUrls: [ './navbar.component.css' ]
 })
 export class NavbarComponent {
     // 控制是否显示侧边栏
@@ -33,5 +33,11 @@ export class NavbarComponent {
         } else {
             this.curDropdownMenuIndex = index;
         }
+    }
+
+    constructor(private router: Router) {}
+
+    logout() {
+        this.router.navigate(['/login']);
     }
 }

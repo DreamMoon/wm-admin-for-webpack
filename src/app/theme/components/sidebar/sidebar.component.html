@@ -34,8 +34,8 @@
                           <span *ngIf="menu.badge && menu.badge > 0" class="u-sidebar_menu_badge bounceIn animated">{{menu.badge}}</span>
                         </a>
                         <ul class="u-sidebar_submenu">
-                          <li *ngFor="let submenu of menu.submenus" (click)="selectSubmenu(menu, submenu)" [class.z-submenu_actived]="curSubmenu == submenu">
-                            <a [routerLink]="submenu.link">{{submenu.name}}</a>
+                          <li *ngFor="let submenu of menu.submenus" (click)="selectSubmenu(menu, submenu)">
+                            <a [routerLink]="submenu.link" routerLinkActive="z-submenu_actived">{{submenu.name}}</a>
                           </li>
                         </ul>
                     </template>

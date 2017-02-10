@@ -15,11 +15,7 @@ import 'style-loader!./app.component.scss';
  */
 @Component({
   selector: 'wm-app',
-  template: `
-    <main>
-      <router-outlet></router-outlet>
-    </main>
-  `
+  template: `<router-outlet></router-outlet>`
 })
 export class AppComponent implements OnInit {
 

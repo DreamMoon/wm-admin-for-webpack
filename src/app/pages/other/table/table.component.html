@@ -1,0 +1,20 @@
+<div class="m-breadcrumb">
+  <ol class="u-breadcrumb">
+    <li><a routerLink="">首页</a></li>
+    <li class="z-active">表格</li>
+  </ol>
+</div>
+<div class="m-box">
+  <div class="m-box-heading">
+    <h4 class="u-box_title">基本表格</h4>
+  </div>
+  <div class="m-box_inner">
+    <h3 class="first">Basic</h3>
+    <p-dataTable [value]="cars">
+      <p-column field="vin" header="Vin"></p-column>
+      <p-column field="year" header="Year"></p-column>
+      <p-column field="brand" header="Brand"></p-column>
+      <p-column field="color" header="Color"></p-column>
+    </p-dataTable>
+  </div>
+</div>

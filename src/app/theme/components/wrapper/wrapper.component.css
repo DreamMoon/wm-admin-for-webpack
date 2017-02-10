@@ -1,14 +1,14 @@
-/*.g-wrapper {
+.g-wrapper {
     position: relative;
     width: 100%;
     height: auto;
     min-height: 100%;
     overflow-x: hidden;
-}*/
-wm-wrapper {
+}
+/*wm-wrapper {
   overflow: hidden;
   display: block;
-}
+}*/
 .g-container {
     position: relative;
     margin-left: 240px;
@@ -40,9 +40,13 @@ wm-wrapper {
 /* container 内容模块 */
 .m-container {
   padding: 15px 15px 60px 15px;
-  min-height: 683px;
+  /*min-height: 683px;*/
 }
-.m-box {
+
+
+/**================== 以下是为该框架后台定义的一些样式 =====================**/
+/* 面包屑导航 */
+.m-breadcrumb, .m-box {
   background-color: white;
   /* border: 1px solid #ddd; */
   margin-bottom: 20px;
@@ -51,6 +55,39 @@ wm-wrapper {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   /* min-height: 200px; */
   overflow: auto;
+}
+.m-breadcrumb {
+  margin-bottom: 10px;
+}
+.m-breadcrumb .u-breadcrumb {
+  padding: 8px 15px;
+  list-style: none;
+  margin: 0;
+}
+.m-breadcrumb .u-breadcrumb>li {
+  display: inline-block;
+  font-size: 14px;
+}
+.m-breadcrumb .u-breadcrumb>li+li:before {
+  padding: 0 5px;
+  color: #ccc;
+  content: "/\00a0";
+}
+.m-breadcrumb .u-breadcrumb>.z-active {
+  color: #777;
+}
+
+/* 盒子样式 */
+.m-box>.m-box-heading {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 10px 15px 0;
+}
+.m-box>.m-box-heading>.u-box_title {
+  margin: 0;
+  font-weight: normal;
+  border-left: 5px solid #4ec3ff;
+  padding-left: 1rem;
+  font-size: 14px;
 }
 .m-box>.m-box_inner {
   padding: 20px;

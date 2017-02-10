@@ -5,10 +5,13 @@ import { PagesRoutingModule }       from './pages-routing.module';
 import { WmModule } from '../theme/wm.module';
 
 import { PagesComponent } from './pages.component';
-import { HomeModule } from "./home/home.module";
 
 @NgModule({
-  imports: [CommonModule, WmModule, PagesRoutingModule, HomeModule ],
+  imports: [
+    CommonModule,
+    WmModule,
+    PagesRoutingModule
+  ],
   declarations: [PagesComponent],
   exports: [PagesComponent]
 })

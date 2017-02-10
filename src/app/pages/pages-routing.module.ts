@@ -11,6 +11,7 @@ const routes: Routes = [
       //{ path: '', redirectTo: 'home', pathMatch: 'full' },
       { path: '', loadChildren: 'app/pages/home/home.module#HomeModule', pathMatch: 'full' },
       { path: 'container', loadChildren: 'app/pages/container/container.module#ContainerModule' },
+      { path: 'other', loadChildren: 'app/pages/other/other.module#OtherModule' }
     ]
   }
 ];

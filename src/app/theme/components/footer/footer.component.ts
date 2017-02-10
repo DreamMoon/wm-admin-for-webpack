@@ -1,7 +1,7 @@
 /**
  * Created by DreamBoy on 2017/1/30.
  */
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'wm-footer',
@@ -9,5 +9,5 @@ import { Component } from '@angular/core';
     styleUrls: [ './footer.component.css' ]
 })
 export class FooterComponent {
-
+  @Input() stretched: boolean = false;
 }

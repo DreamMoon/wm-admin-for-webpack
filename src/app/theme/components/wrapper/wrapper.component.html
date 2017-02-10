@@ -1,11 +1,11 @@
-<!--<div class="g-wrapper">-->
+<div class="g-wrapper">
     <wm-navbar [(showSidebar)]="isShowSidebar" [(showSidebarHeader)]="isShowSidebarHeader"></wm-navbar>
-    <wm-sidebar [show]="isShowSidebar" [showHeader]="isShowSidebarHeader"></wm-sidebar>
+    <wm-sidebar [menus]="menus" [show]="isShowSidebar" [showHeader]="isShowSidebarHeader"></wm-sidebar>
     <div class="g-container" [class.z-stretched]="!isShowSidebar">
         <div class="m-container">
             <router-outlet></router-outlet>
         </div>
-        <wm-footer></wm-footer>
     </div>
+    <wm-footer [stretched]="!isShowSidebar"></wm-footer>
     <wm-scroll-to-top></wm-scroll-to-top>
-<!--</div>-->
+</div>

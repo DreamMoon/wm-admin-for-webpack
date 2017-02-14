@@ -3,6 +3,8 @@
  */
 import { Component } from '@angular/core';
 
+/*import 'style-loader!./login.component.scss';*/
+
 @Component({
     templateUrl: './login.component.html',
     styleUrls: [ './login.component.css' ]

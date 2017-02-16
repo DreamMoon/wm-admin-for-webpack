@@ -1,1 +1,1 @@
-export * from './atemplate.component.ts';
+export * from './more.component';

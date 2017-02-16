@@ -3,11 +3,13 @@ import { CommonModule }  from '@angular/common';
 
 import { LoginComponent } from './login.component';
 import { LoginRoutingModule }       from './login-routing.module';
+import { WmModule } from "../../theme/wm.module";
 
 @NgModule({
   imports: [
     CommonModule,
-    LoginRoutingModule
+    LoginRoutingModule,
+    WmModule
   ],
   declarations: [
     LoginComponent

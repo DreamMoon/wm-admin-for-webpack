@@ -10,7 +10,13 @@ import {
   ScrollToTopComponent,
   SidebarComponent,
   WrapperComponent
-} from './components';
+} from './components/framework';
+
+import {
+  LoginComponent,
+  LoginNavbarComponent,
+  RegisterComponent
+} from './components/login';
 
 const WM_COMPONENTS = [
   FooterComponent,
@@ -18,7 +24,11 @@ const WM_COMPONENTS = [
   NavbarComponent,
   ScrollToTopComponent,
   SidebarComponent,
-  WrapperComponent
+  WrapperComponent,
+
+  LoginComponent,
+  LoginNavbarComponent,
+  RegisterComponent,
 ];
 
 const WM_DIRECTIVES = [
@@ -52,7 +62,10 @@ const WM_VALIDATORS = [
   exports: [
     ...WM_PIPES,
     ...WM_DIRECTIVES,
-    ...WM_COMPONENTS
+
+    WrapperComponent,
+    LoginComponent,
+    RegisterComponent
   ]
 })
 export class WmModule {

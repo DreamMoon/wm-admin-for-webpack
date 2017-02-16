@@ -4,8 +4,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-    template: `<wm-login></wm-login>`
+    selector: 'wm-register',
+    templateUrl: './register.component.html'
 })
-export class LoginComponent {
+export class RegisterComponent {
 
 }

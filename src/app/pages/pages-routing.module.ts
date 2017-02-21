@@ -1,9 +1,10 @@
 import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {PagesComponent} from "./pages.component";
+
+import { PagesComponent } from "./pages.component";
 
 const routes: Routes = [
-  { path: 'login', loadChildren: 'app/pages/login/login.module#LoginModule' },
+  { path: 'user', loadChildren: 'app/theme/modules/wm-user/wm-user.module#WmUserModule' },
   {
     path: '',
     component: PagesComponent,

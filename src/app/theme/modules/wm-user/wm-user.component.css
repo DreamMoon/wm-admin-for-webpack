@@ -73,6 +73,10 @@
   background-color: #234;
   letter-spacing: 5px;
   font-size: 16px;
+  color: white;
+}
+.m-login_panel_left .u-login_handle .u-login_handle_name a {
+  color: white;
 }
 .m-login_panel_left .u-login_handle:hover .u-login_handle_icon {
   left: 100%;

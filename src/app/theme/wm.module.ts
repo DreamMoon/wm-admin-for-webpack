@@ -12,12 +12,6 @@ import {
   WrapperComponent
 } from './components/framework';
 
-import {
-  LoginComponent,
-  LoginNavbarComponent,
-  RegisterComponent
-} from './components/login';
-
 const WM_COMPONENTS = [
   FooterComponent,
   HomeComponent,
@@ -25,10 +19,7 @@ const WM_COMPONENTS = [
   ScrollToTopComponent,
   SidebarComponent,
   WrapperComponent,
-
-  LoginComponent,
-  LoginNavbarComponent,
-  RegisterComponent,
+  
 ];
 
 const WM_DIRECTIVES = [
@@ -63,9 +54,7 @@ const WM_VALIDATORS = [
     ...WM_PIPES,
     ...WM_DIRECTIVES,
 
-    WrapperComponent,
-    LoginComponent,
-    RegisterComponent
+    WrapperComponent
   ]
 })
 export class WmModule {

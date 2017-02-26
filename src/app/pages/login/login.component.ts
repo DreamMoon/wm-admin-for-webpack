@@ -3,8 +3,9 @@
  */
 import { Component } from '@angular/core';
 
+import 'style-loader!./login.component.scss';
+
 @Component({
-    selector: 'wm-login',
     templateUrl: './login.component.html'
 })
 export class LoginComponent {

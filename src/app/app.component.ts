@@ -8,6 +8,7 @@ import {
 import { AppState } from './app.service';
 
 import 'style-loader!./app.component.scss';
+import '../assets/lib/css3-3d-cube-loading/css/style.css';
 
 /*
  * App Component

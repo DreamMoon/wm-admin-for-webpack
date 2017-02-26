@@ -3,8 +3,9 @@
  */
 import { Component } from '@angular/core';
 
+import 'style-loader!./register.component.scss';
+
 @Component({
-    selector: 'wm-register',
     templateUrl: './register.component.html'
 })
 export class RegisterComponent {

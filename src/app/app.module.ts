@@ -56,7 +56,7 @@ type StoreType = {
     RouterModule,
     FormsModule,
     ReactiveFormsModule,
-    
+
     PagesModule,
     WmModule.forRoot(),
     AppRoutingModule

@@ -4,7 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { PagesComponent } from "./pages.component";
 
 const routes: Routes = [
-  { path: 'user', loadChildren: 'app/theme/modules/wm-user/wm-user.module#WmUserModule' },
+  { path: 'login', loadChildren: 'app/pages/login/login.module#LoginModule' },
+  { path: 'register', loadChildren: 'app/pages/register/register.module#RegisterModule' },
   {
     path: '',
     component: PagesComponent,

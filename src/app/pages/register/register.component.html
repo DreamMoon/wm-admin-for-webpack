@@ -1,0 +1,60 @@
+<div class="g-login_container">
+  <div class="m-login_panel zoomInRight animated">
+    <div class="m-login_panel_left">
+      <div class="u-login_handle">
+        <div class="u-login_handle_icon">
+          <i class="fa fa-home"></i>
+        </div>
+        <div class="u-login_handle_name">
+          <a routerLink="/login">登录</a>
+        </div>
+      </div>
+      <div class="u-login_handle">
+        <div class="u-login_handle_icon">
+          <i class="fa fa-plus-square"></i>
+        </div>
+        <div class="u-login_handle_name">
+          <a href="javascript:void(0)">注册</a>
+        </div>
+      </div>
+      <div class="u-login_handle">
+        <div class="u-login_handle_icon">
+          <i class="fa fa-question-circle"></i>
+        </div>
+        <div class="u-login_handle_name">忘记</div>
+      </div>
+    </div>
+    <div class="m-login_panel_right">
+      <div class="m-login_header">WM Admin - 注册</div>
+      <form action="">
+        <div class="m-login_form">
+          <div class="m-login_form_block" style="padding-top: 0">
+            <div class="u-login_form_row">
+              <input type="email" class="u-login_input" placeholder="电子邮箱">
+              <i class="fa fa-envelope-open-o"></i>
+            </div>
+            <div class="u-login_form_row">
+              <input type="password" class="u-login_input" placeholder="密码">
+              <i class="fa fa-lock"></i>
+            </div>
+            <div class="u-login_form_row">
+              <input type="password" class="u-login_input" placeholder="确认密码">
+              <i class="fa fa-leaf"></i>
+            </div>
+            <div class="u-login_form_row">
+              <input type="text" class="u-login_input" placeholder="验证码">
+              <i class="fa fa-check"></i>
+              <div class="u-check_code">
+                <img src="/assets/images/tmp/check-code.png" alt="验证码">
+              </div>
+            </div>
+          </div>
+          <!--<button type="submit" class="u-login_button">注册</button>-->
+          <button type="button" class="u-login_button" (click)="test()">注册</button>
+        </div>
+      </form>
+      <div class="m-login_footer">
+      </div>
+    </div>
+  </div>
+</div>

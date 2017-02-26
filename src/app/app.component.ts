@@ -7,8 +7,10 @@ import {
 } from '@angular/core';
 import { AppState } from './app.service';
 
+import { WmThemePreloader, WmThemeSpinner } from './theme/providers';
+
 import 'style-loader!./app.component.scss';
-import '../assets/lib/css3-3d-cube-loading/css/style.css';
+import 'style-loader!./theme/initial.scss';
 
 /*
  * App Component
@@ -21,10 +23,18 @@ import '../assets/lib/css3-3d-cube-loading/css/style.css';
 export class AppComponent implements OnInit {
 
   constructor(
-    public appState: AppState
+    public appState: AppState,
+    private _spinner: WmThemeSpinner
   ) {}
 
   public ngOnInit() {
     console.log('Initial App State', this.appState.state);
+  }
+
+  public ngAfterViewInit(): void {
+    // hide spinner once all loaders are completed
+    WmThemePreloader.load().then((values) => {
+      this._spinner.hide();
+    });
   }
 }

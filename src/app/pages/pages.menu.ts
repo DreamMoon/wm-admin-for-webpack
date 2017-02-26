@@ -70,7 +70,7 @@ export const PAGES_MENU = [
         name: '空白页面'
       },
       {
-        link: '/user/login',
+        link: '/login',
         name: '登录页面'
       },
       {

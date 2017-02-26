@@ -12,6 +12,12 @@ import {
   WrapperComponent
 } from './components/framework';
 
+import {
+  WmImageLoaderService,
+  WmThemePreloader,
+  WmThemeSpinner
+} from './providers';
+
 const WM_COMPONENTS = [
   FooterComponent,
   HomeComponent,
@@ -19,7 +25,7 @@ const WM_COMPONENTS = [
   ScrollToTopComponent,
   SidebarComponent,
   WrapperComponent,
-  
+
 ];
 
 const WM_DIRECTIVES = [
@@ -31,7 +37,9 @@ const WM_PIPES = [
 ];
 
 const WM_SERVICES = [
-
+  WmImageLoaderService,
+  WmThemePreloader,
+  WmThemeSpinner
 ];
 
 const WM_VALIDATORS = [

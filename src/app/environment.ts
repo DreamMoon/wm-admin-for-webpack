@@ -7,9 +7,12 @@ import {
   ApplicationRef,
   enableProdMode
 } from '@angular/core';
+import { AppHttpService, HttpService } from "./providers";
 // Environment Providers
 let PROVIDERS: any[] = [
   // common env directives
+  HttpService,
+  AppHttpService
 ];
 
 // Angular debug tools in the dev console

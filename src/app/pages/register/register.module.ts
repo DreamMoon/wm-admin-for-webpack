@@ -3,6 +3,7 @@ import { CommonModule }  from '@angular/common';
 
 import { RegisterComponent } from './register.component';
 import { RegisterRoutingModule }       from './register-routing.module';
+import { RegisterService } from "./register.service";
 
 @NgModule({
   imports: [
@@ -12,6 +13,6 @@ import { RegisterRoutingModule }       from './register-routing.module';
   declarations: [
     RegisterComponent
   ],
-  providers: []
+  providers: [ RegisterService ]
 })
 export class RegisterModule {}

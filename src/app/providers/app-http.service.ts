@@ -12,6 +12,7 @@ import { HttpService } from "./http.service";
 @Injectable()
 export class AppHttpService {
   static APP_HOST: string = ''; // 请求的主机域名
+  static APP_URL: string = ''; // 请求的主机即路径
   static URL_GET_REGI_VCODE: string = 'developer/getRegiVCode';
 
 
@@ -26,6 +27,9 @@ export class AppHttpService {
     if(AppHttpDevService.APP_HOST) {
       AppHttpService.APP_HOST = AppHttpDevService.APP_HOST;
     }
+    if(AppHttpDevService.APP_URL) {
+      AppHttpService.APP_URL = AppHttpDevService.APP_URL;
+    }
   }
 
   /**
@@ -33,7 +37,7 @@ export class AppHttpService {
    * @param url
    */
   private static handleUrl(url: string) {
-    return AppHttpService.APP_HOST + '/' + url;
+    return AppHttpService.APP_URL + '/' + url;
   }
 
   /**
@@ -53,5 +57,16 @@ export class AppHttpService {
    */
   post(url: string, data: any): Promise<any> {
     return this.httpSer.post(AppHttpService.handleUrl(url), data);
+  }
+
+  /**
+   * 验证请求返回的处理结果是否为成功的
+   * @param data
+   */
+  static check(data: any) {
+    if(data && data.code == 1) {
+      return true;
+    }
+    return false;
   }
 }

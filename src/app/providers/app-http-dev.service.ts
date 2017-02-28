@@ -8,6 +8,7 @@ import { Injectable }    from '@angular/core';
  */
 @Injectable()
 export class AppHttpDevService {
-  static APP_HOST: string = 'http://localhost/wm/dev/public'; // 请求的主机域名
+  static APP_HOST: string = 'http://localhost'; // 请求的主机域名
+  static APP_URL: string = 'http://localhost/wm/dev/public'; // 请求的主机即路径
 
 }

@@ -107,7 +107,7 @@
     height: 20px;
 }
 .m-sidebar .m-sidebar_menu a {
-    display: inline-block;
+    display: block;
     width: 100%;
     position: relative;
     font-size: 13px;
